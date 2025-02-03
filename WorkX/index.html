@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card - HNG Internship</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="left">
+        <img src="Me.jpg" 
+        alt="User Profile Picture" width="100" data-testid="profilePicture">
+        <h4 data-testid="fullName">Iyiewuare Desmond Osamudiamen</h4>
+        <p data-testid="jobTitle">Unemployed</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <h3>Information</h3>
+            <div class="info_data">
+                <div class="data">
+                    <h4>Email</h4>
+                    <p class="editable" id="email" data-testid="emailAddress">
+                        <a href="mailto:sparrowdesmond@gmail.com">sparrowdesmond@gmail.com</a>
+                    </p>
+                </div>
+                <div class="data">
+                    <h4>Current Location</h4>
+                    <p class="editable" id="location" data-testid="currentLocation">Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="bio">
+            <h3>About Me</h3>
+            <p class="editable" id="bio" data-testid="shortBio">
+              I am a front-end web developer passionate about crafting sleek, responsive, and user-friendly web interfaces. I specialize in HTML, CSS, JavaScript, and modern frameworks to build dynamic web applications. My journey in web development is fueled by a drive to earn and a passion for continuous learning. I enjoy experimenting with dark mode designs, hover effects, interactive elements, and optimizing the user experience to create engaging and seamless websites. 
+                Excited to grow through the HNG Internship and collaborate with like-minded developers.
+            </p>
+        </div>
+
+        <div class="social_media">
+          <ul>
+              <li><a href="https://www.linkedin.com/in/desmond-iyiewuare-x/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://x.com/desmond_hex" target="_blank"><i class="fab fa-x-twitter"></i></a></li>
+              <li><a href="https://github.com/Dextrox007" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
+      </div>
+      
+
+        <div class="utc_time">
+            <h3>Current UTC Time</h3>
+            <p id="utc-time" data-testid="currentTimeUTC"></p>
+        </div>
+
+        <button id="theme-toggle">Toggle Dark Mode</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
